@@ -12,6 +12,7 @@ const tours = [
     title: "Westminister Bridge",
     city: "London",
     distance: 300,
+    address: "overhere",
     price: 99,
     maxGroupSize: 10,
     desc: "this is the description",
@@ -31,6 +32,8 @@ const tours = [
     city: "Indonesia",
     distance: 400,
     price: 99,
+    address: "overthere",
+
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [
@@ -49,6 +52,8 @@ const tours = [
     city: "Thailand",
     distance: 500,
     price: 99,
+    address: "everywhere",
+
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [
@@ -67,6 +72,8 @@ const tours = [
     city: "Thailand",
     distance: 500,
     price: 99,
+    address: "somewhere",
+
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [
@@ -86,6 +93,8 @@ const tours = [
     distance: 500,
     price: 99,
     maxGroupSize: 8,
+    address: "nothere",
+
     desc: "this is the description",
     reviews: [
       {
@@ -103,6 +112,8 @@ const tours = [
     city: "Japan",
     distance: 500,
     price: 99,
+    address: "this is it",
+
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [
@@ -121,6 +132,8 @@ const tours = [
     city: "France",
     distance: 500,
     price: 99,
+    address: "so far",
+
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [
@@ -139,6 +152,8 @@ const tours = [
     city: "Thailand",
     distance: 500,
     price: 99,
+    address: "far far away",
+
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [

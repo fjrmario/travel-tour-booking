@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 
 const tourSchema = new mongoose.Schema(
   {
@@ -17,7 +17,6 @@ const tourSchema = new mongoose.Schema(
     },
     distance: {
       type: Number,
-      required: true,
     },
     photo: {
       type: String,
@@ -35,6 +34,15 @@ const tourSchema = new mongoose.Schema(
       type: Number,
       required: true,
     },
+    bookedSlots: {
+      type: Number,
+    },
+    bookedBy: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Booking",
+      },
+    ],
 
     reviews: [
       {
@@ -51,4 +59,4 @@ const tourSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-export default mongoose.model("Tour", tourSchema);
+module.exports = mongoose.model("Tour", tourSchema);
